@@ -89,6 +89,9 @@ article .img-container::before{
 }
 #info{
     margin-bottom: 0.8rem;
+    width: 90%;
+    margin: 0 auto 1rem;
+    /* border: 1px solid rebeccapurple; */
 }
 
 
