@@ -40,6 +40,8 @@ article .img-container{
     border-radius: 50%;
     position: relative;
     margin-bottom: 1.5rem;
+    /* border: 1px solid red; */
+    margin: 0 auto;
 }
 #person-img{
     height: 100%;
@@ -64,4 +66,59 @@ article .img-container:after{
     border-radius: 50%;
     transform: translateY(25%);
     background-color: #0047AB;
+}
+article .img-container::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #0047AB;
+    position: absolute;
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 50%;
+}
+
+#author{
+    margin: 0.8rem 0;
+    font-size: 1.5rem;
+}
+#job{
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    color: 	#1F51FF;
+}
+#info{
+    margin-bottom: 0.8rem;
+}
+
+
+.prev-btn, .next-btn{
+    color: #1F51FF;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    margin: 0.5rem 0.8rem;
+    cursor: pointer;
+}
+
+.random-btn{
+    display: block;
+    width: 8rem;
+    height: 2rem;
+    border: 2px solid #0047AB;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.05rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.14s ease;
+}
+.random-btn:hover{
+    background-color: #0047AB;
+}
+.random-btn:active{
+    transform: scale(0.98);
 }
